@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Exercises</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        button {
+            display:block;
+            width: 225px;
+            height: 50px;
+            color: #3c1a70;
+            font-size: 1.4rem;
+            margin-top: 3px;
+        }
+
+        .container {
+            background: #b3b3ff;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create buttons that do each of the tasks below:
+    // Render the results to the page in html elements.
+    // Hide the results from the previous actions
+    //1     Get all posts
+    //2     Get post with id of 10
+    //3     Get the comments from post with id of 12
+    //     note: comments are part of a different data model, you'll need to structure your endpoint to ask for all of the comments that belong to post #12
+    //4     Get all the posts from user with id of 2
+    //5     Create a new post and log the id generated for it by the server
+    //     Replace the post with id of 12 and render the responseJSON
+    //     Update the title of post with id of 12 and render responseJSON
+    //     Delete the post with id of 12 and render a success message
+    //     Display a list of posts.
+    //         When the user clicks on a post, display all the comments from that post
+    //         Display a link back to all posts -->
+
+
+    <div class="container">
+        <h1>JSON Exercise #1</h1>
+        <div class="row">
+            <div class="col-lg-3">
+                <button id="all-posts" class="btn btn-success">All Posts</button>
+                <button id="post-id10" class="btn btn-success">PostID: 10</button>
+                <button id="comments-id12" class="btn btn-success">Comments PostID: 12</button>
+                <button id="all-posts-byuser" class="btn btn-success">All Posts from UserID: 2</button>
+                <button id="create-post" class="btn btn-success">Create a New Post</button>
+                <button id="replace-post12" class="btn btn-success">Replace PostID: 12</button>
+                <button id="update-title12" class="btn btn-success">Update Title of PostID: 12</button>                                
+                <button id="delete-post12" class="btn btn-success">Delete PostID: 12</button>                                
+                <button id="display-postslist" class="btn btn-success">Display List of Posts</button>                                
+
+            </div>
+            <div id="display-results" class="col-lg-9">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
